@@ -23,11 +23,11 @@ services:
   juice-shop:
     image: bkimminich/juice-shop
     ports:
-      - "3000:3232"
+      - "3000:3000"
 
   jenkins:
-    image: jenkins/jenkins
-    #build: .
+    #image: jenkins/jenkins
+    build: .
     ports:
       - 8080:8080
       - 50000:50000
